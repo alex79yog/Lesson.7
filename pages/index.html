@@ -8,7 +8,9 @@
     <title><i>The table</i></title>
 </head>
 
-<header> <h1 style="font-size: 2rem;">Paint by TAGs without CSS</h1></header>
+<header>
+    <h1 style="font-size: 2rem;">Paint by TAGs without CSS</h1>
+</header>
 
 <div>
     <ol>
@@ -21,8 +23,10 @@
 
 
 
-<body style="background-color: azure;" >
-    <table border="4" width="800" heigth="100" cellspacing="0" cellpadding="5">
+<body style="background-color: azure;">
+    <table border="4" cellspacing="0" cellpadding="5">
+
+        <!--first line-->
 
         <tr>
             <td colspan="2">
@@ -40,22 +44,26 @@
                 </table>
             </td>
 
-            <td colspan="2">
-                <table style="background-color: yellow;">
+            <td colspan="2" style="background-color: yellow;">
+                <table>
                     <td>content</td>
                     <td>content</td>
                 </table>
             </td>
 
             <td rowspan="6">
-                content
+                c
             </td>
 
         </tr>
 
+        <!--second line-->
 
         <tr>
-            <td rowspan="2"> content
+            <td rowspan="2">
+                <table>
+                    <td> content </td>
+                </table>
                 <table>
                     <td> content </td>
                 </table>
@@ -74,30 +82,33 @@
 
         <tr>
         </tr>
+
+        <!--third line-->
         <tr>
+            
             <td rowspan="3"> content </td>
-            <td> content </td>
-            <td> content </td>
-            <td> content </td>
-            <td> content </td>
-            <td> content </td>
-            <td> content </td>
+            <td rowspan="2"> content </td>
+            <td rowspan="2"> content </td>
+            <td> c </td>
+
         </tr>
+
+        <!--fourth line-->
+
+        <tr>
+            <td> content </td>
+
+
+
+        </tr>
+
+        <!--fifth line-->
+
         <tr>
             <td> content </td>
             <td> content </td>
             <td> content </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-        </tr>
-        <tr>
             <td> content </td>
-            <td> content </td>
-            <td> content </td>
-            <td> content </td>
-            <td> </td>
             <td> </td>
             <td> </td>
         </tr>
